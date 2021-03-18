@@ -534,12 +534,18 @@ section
     grid-column: 9;
 }
 
-
 #nav_hebergement a, #nav_activite a
 {
     color: black;
     text-decoration: none;
     font-weight: bold;
+}
+
+#nav_hebergement a:hover, #nav_activite a:hover
+{
+    color: var(--bleu);
+    border-top: 3px solid #0065FC;
+    padding-top: 45px;
 }
 
 #inscription a
@@ -562,12 +568,7 @@ section
     text-align: center;
 }
 
-#nav_hebergement a:hover, #nav_activite a:hover
-{
-    color: var(--bleu);
-    border-top: 3px solid #0065FC;
-    padding-top: 45px;
-}
+
 
 
 /*----------------FOOTER----------------------*/
@@ -610,10 +611,6 @@ footer
    text-decoration:underline;
 }
 
-
-
-
-
 /*----------------RESPONSIVE téléphone----------------------*/
 
 @media all and (max-width: 640px) 
@@ -644,13 +641,11 @@ section
 
 #conteneur_logo
 {
-    
     margin-top:0px;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
 }
-
 
 #lieu
 {
@@ -660,7 +655,6 @@ section
 #nav_hebergement
 {
     grid-column: 1 / 2;
-    margin-right: -12px;
 }
 
 #nav_activite
@@ -668,9 +662,25 @@ section
     grid-column: 2 / 2;
 }
 
-#nav_hebergement a:hover , #nav_activite a:hover
+
+#nav_hebergement, #nav_activite
 {
+    color: var(--bleu);
     border-top: none;
+    border-bottom: 3px solid var(--gris);
+    padding-bottom: 20px;
+    margin-right: -10px;
+}
+
+
+#nav_hebergement:hover, #nav_activite:hover, #nav_hebergement a:hover, #nav_activite a:hover
+{
+    color: var(--bleu);
+    border-top: none;
+    border-bottom: 5px solid #0065FC;
+    padding-bottom: 20px;
+    
+  
 }
 
 .grande_section, .petite_section
@@ -687,7 +697,6 @@ section
     border-radius: 15px 15px 0px 0px;
     background-repeat: no-repeat;
 }
-
 
 .bouton_recherche
 {
@@ -706,10 +715,6 @@ section
     border-radius: 15px 15px 0px 0px;  
 }
 
-.hebergement 
-{
-    
-}
 
 .bouton
 {
@@ -735,7 +740,6 @@ aside
     margin: auto;
     display: flex;
     flex-direction: column;
-    
 }
 
 #filtre
@@ -749,8 +753,6 @@ aside
     margin: 10px;
     width: 90%;
 }
-
-
 
     footer
     {
@@ -828,18 +830,13 @@ aside
         width: 50%;
     }
  
-    .hebergement
-    {
-        
-    
-    }
     
     article
     {
-        text-align: center;
         width: 100%;
-        padding: 0;
         background-color: white;
+        flex-direction: column;
+        grid-column: 2;
     }
     
     aside
@@ -869,7 +866,7 @@ aside
     
     .bouton a:hover
     {
-        background-color: white;
+        
         padding: 0px 0px 0px 0px;
     }
     .grande_section, .petite_section
@@ -887,18 +884,6 @@ aside
         
     }
 
-    #activite_vieuxport
-{
-    width:200%;
-    
-    background-image: url('images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
-    background-position: 60%,60%;
-    border-radius: 15px 15px 0px 0px;
-
-}
-    
-
-  
         footer
         {
             flex-direction: column;
