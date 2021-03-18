@@ -1,0 +1,907 @@
+@font-face
+{
+	font-family: 'Raleway-VariableFont_wght';
+	src: url('police/Raleway-VariableFont_wght.ttf');
+    font-style: normal;
+}
+
+@font-face
+{
+	font-family: 'Raleway-ExtraBold';
+	src: url('police/Raleway-Extrabold.ttf');
+    font-weight: bold;
+}
+
+:root
+{
+    --bleu: #0065FC;
+    --bleuclair: #DEEBFF;
+    --gris:#F2F2F2; 
+}
+
+nav
+{
+    display: flex;
+}
+
+/*----------------HEBERGEMENT----------------------*/
+
+h3, #filtre, #titre_pop, h4, h2, .bouton, .bouton_plus, .prix
+{
+    font-family: 'Raleway-ExtraBold';
+    
+}
+
+.hebergement
+{
+    background-color:white;
+    box-shadow: 4px 4px 4px #b1b1b163;  
+    
+}
+
+.hebergement a:hover
+{
+    color: var(--bleu);
+}
+
+article a
+{
+    color: unset;
+    text-decoration: none;
+}
+
+article
+{
+    display: grid;
+    grid-column: 1/4;
+    padding: 10px;
+    grid-template-columns: repeat (3,1fr);
+    grid-gap: 20px;
+    grid-row: 1;
+}
+
+#hebergement 
+{
+    grid-column: 1/4;
+}
+
+.hebergement
+{
+    height: 320px;
+    Border-radius: 20px;
+	padding: 10px 3px 3px 3px;
+    
+}
+
+
+.hebergement_descrption
+{
+    padding: 0px 0px 10px 10px;
+    border-radius: 15px;
+}
+
+
+.hebergement_img img
+{
+    width: 95%;
+    height: 150px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.hebergement_img 
+{
+    margin:auto;
+    text-align: center;
+}
+
+/*----------------POPULAIRE----------------------*/
+
+
+
+.populaire a:hover
+{
+    color: var(--bleu);
+}
+
+.populaire a
+{
+    color: unset;
+    text-decoration: none;
+}
+
+aside
+{
+    height: 824px; 
+}
+
+#titre_pop
+ {
+    padding-left: 20px;
+    align-items: baseline;
+    width: auto;
+    
+    
+ }
+
+ #titre_pop span
+ {
+    float: right;
+    margin-right: 15px;
+ }
+
+.populaire
+{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 180px;
+    margin: 0px 15px 50px 10px;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 4px 4px 4px #b1b1b163;  
+}
+
+.pop_description
+{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#hotel_soleil
+{
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 10px;
+    height: 150px;
+    width: 80%;
+    background-size: 250px;
+    background-position: 40% 60% ;
+    border-radius: 15px 0px 0px 15px;
+    background-image: url('images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
+}
+
+#hotel_coeur
+{
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 10px;
+    height: 150px;
+    width: 80%;
+    background-size: 200px;
+    background-position: 40% 60% ;
+    border-radius: 15px 0px 0px 15px;
+    background-image: url('images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg');
+}
+
+#hotel_bleu
+{
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 10px;
+    height: 150px;
+    width: 80%;
+    background-size: 200px;
+    background-position: 40% 60% ;
+    border-radius: 15px 0px 0px 15px;
+    background-image: url('images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
+}
+
+/*----------------ACITIVITE----------------------*/
+
+.activite_tableau a
+{
+    color: unset;
+    text-decoration: none;
+}
+
+.activite_tableau a:hover
+{
+    
+    color: var(--bleu);
+    text-decoration: none;
+}
+
+.activite_description
+{
+    padding-left: 10px;
+}
+
+#activite_marseille
+{
+    width: 100%;
+    padding-left: 20px;
+}
+
+.activite_tableau
+{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+    
+}
+
+  .port {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+
+  .fort {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+  .frioul {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .calanques {
+    grid-column: 3;
+    grid-row: 2/4;
+  }
+
+  .dame {
+    grid-column: 4;
+    grid-row: 2;
+  }
+  
+
+  .longchamp
+  {
+      grid-column: 4;
+      grid-row: 3;
+  }
+
+
+.fort
+{
+    height: 170px;
+}
+
+
+.grande_section
+{
+    box-shadow: 4px 4px 4px #b1b1b163;  
+	border-radius: 15px;
+    width: 280px; 
+    height: 400px;      
+}
+
+.petite_section
+{
+    box-shadow: 4px 4px 4px #b1b1b163;  
+	border-radius: 15px;
+    width: 280px; 
+    height: 170px;      
+}
+
+#activite_calanques
+{
+    height: 300px;
+    background-size: 450px;
+    background-position: 60%,60%;
+    border-radius: 15px 15px 0px 0px;
+    background-image: url('images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+}
+
+#activite_vieuxport
+{
+    height: 300px;
+    background-image: url('images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+    background-position: 60%,60%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#activite_frioul
+{
+    height: 100px;
+    background-size: 300px;
+    background-position: 60% 40% ;
+    border-radius: 15px 15px 0px 0px;
+    background-image: url('images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
+}
+
+#activite_dame
+{
+    height: 100px;
+    background-size: 300px;
+    background-position: 50% 10% ;
+    border-radius: 15px 15px 0px 0px;
+    background-image: url('images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg');
+}
+
+#activite_longchamp
+{
+    height: 100px;
+    background-size: 250px;
+    background-position: 60% 50% ;
+    border-radius: 15px 15px 0px 0px;
+    background-image: url('images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
+}
+
+#activite_fort
+{
+    height: 100px;
+    background-size: 300px;
+    background-position: 60% 50% ;
+    border-radius: 15px 15px 0px 0px;
+    background-image: url('images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
+}
+
+
+article, aside
+{
+    background-color: var(--gris);
+    border-radius: 15px;  
+}
+
+#bloc_page
+{
+    font-family: 'Raleway-VariableFont_wght';
+    width: 1300px;
+    margin: auto;
+}
+
+.bouton
+{
+    height: 25px;
+    bottom: 5px;
+    border: 3px solid var(--gris);
+    color: black;
+    border-radius: 60px 50px 50px 60px;
+    padding: 10px 10px 10px 0px;
+    font-size: 12px bold;
+    text-decoration: none;
+    margin-left: 20px;
+    
+}
+
+.bouton a
+ {
+     text-decoration: none;
+     color: black;
+ }
+
+ .bouton:hover
+ {
+    background-color: var(--bleu);
+   
+    border-radius: 60px 50px 50px 60px;
+    padding: 10px 10px 10px 0px;
+ }
+
+ .bouton a:hover
+ {
+     color: white;
+ }
+
+ .bouton:hover a {
+    color: white;
+ }
+
+
+ .bouton_recherche
+ {
+    height: 25px;
+    background-color:var(--bleu);
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+    text-align: center;
+    padding: 10px 20px 10px;
+    font-size: 20px bold;
+    text-decoration: none;
+    margin-left: -5px;
+}
+
+.bouton_rechercher a:hover, .bouton_recherche_loupe:hover
+{
+    background-color: var(--bleuclair);
+    color: var(--bleu);
+}
+
+.bouton_recherche_loupe
+{
+    display: none;
+    height: 20px;
+   background-color:var(--bleu);
+   border-radius: 10px 10px 10px 10px;
+   color: white;
+   text-align: center;
+   padding: 10px 10px 10px;
+   font-size: 20px bold;
+   text-decoration: none;
+   margin-left: -5px;
+}
+
+ .map
+ { 
+    display: inline-block;
+    border-radius: 15px 0px 0px 20px;
+    background-color: var(--gris);
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    width: 30px;
+    margin-right: -5px;
+ }
+
+ .info
+ { 
+    
+    border-radius: 50px 50px 50px 50px;
+    border: 3px solid var(--gris);
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    width: 5px;
+ }
+
+ #groupe_info
+ {
+   
+    display: inline-flex;
+    align-items: baseline;
+ } 
+
+ .icone_filtre
+ {
+    background-color: var(--bleuclair);
+     border-radius: 50px 50px 50px 50px;
+     padding: 15px 15px 15px 15px;
+     margin-right: 10px;
+    
+ }
+
+ 
+
+fieldset
+{
+    border:none;
+}
+
+legend, #filtre
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input
+{
+    align-items: baseline;
+    align-content: flex-start;
+    height: 26px;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Raleway-VariableFont_wght';
+}
+
+i
+{
+    border-radius: 20px 20px;
+}
+
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog, .fa-info, .fa-star
+{
+    color:var(--bleu)
+}
+
+.far fa-star
+{
+    color: var(--gris);
+}
+
+#filtre
+{
+    display: flex;
+    font-weight: bold;
+    padding-top: 20px; 
+}
+
+form
+{
+    font-weight: bold;
+}
+
+section
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px;
+}
+
+#conteneur_logo
+{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(10px, auto);
+   
+}
+
+#titre_principal
+{
+    grid-column: 1;
+}
+
+
+#nav_hebergement
+{
+    grid-column: 7;
+}
+
+#inscription
+{
+    grid-column: 9;
+}
+
+
+#nav_hebergement a, #nav_activite a
+{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#inscription a
+{
+    font-family: 'Raleway-ExtraBold';
+    color: var(--bleu);
+    text-decoration: none;
+}
+
+#inscription a:hover
+{
+    font-family: 'Raleway-ExtraBold';
+    font-size: 18px;
+    color: black;
+}
+
+#conteneur_logo
+{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#nav_hebergement a:hover, #nav_activite a:hover
+{
+    color: var(--bleu);
+    border-top: 3px solid #0065FC;
+    padding-top: 45px;
+}
+
+
+/*----------------FOOTER----------------------*/
+footer
+{
+	width: auto;
+    margin-top: 40px;
+    padding-top: 50px;
+    padding-left: 15%;
+    background-color: var(--gris);
+    font-family: 'Raleway-VariableFont_wght';
+    font-size: 16px;
+    display: flex;
+    height: 200px;
+}
+
+#liste_apropos ul, #nos_hebergements ul, #assistance ul
+{
+    text-decoration: none;
+    padding-left : 2px;
+    list-style-type: none;
+    margin-right: 200px;
+}
+
+#liste_apropos a, #nos_hebergements a, #assistance a
+{
+   color:black;
+    text-decoration: none;
+
+}
+
+#liste_apropos li, #nos_hebergements li, #assistance li
+{
+   margin: 0px 0px 12px 0px;
+   width: 250px;
+}
+
+#liste_apropos a:hover, #nos_hebergements a:hover, #assistance a:hover
+{
+   text-decoration:underline;
+}
+
+
+
+
+
+/*----------------RESPONSIVE téléphone----------------------*/
+
+@media all and (max-width: 640px) 
+
+{
+    #bloc_page
+    {
+        width: auto;
+    }
+
+        
+    h2
+    {
+        text-align:center;
+    }
+
+section
+{
+    display:flex;
+    flex-direction: column;
+}
+
+#inscription
+{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#conteneur_logo
+{
+    
+    margin-top:0px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+
+#lieu
+{
+    width: 60%;
+}
+
+#nav_hebergement
+{
+    grid-column: 1 / 2;
+    margin-right: -12px;
+}
+
+#nav_activite
+{
+    grid-column: 2 / 2;
+}
+
+#nav_hebergement a:hover , #nav_activite a:hover
+{
+    border-top: none;
+}
+
+.grande_section, .petite_section
+    {
+       height: 200px;
+        width: 100%;
+    }
+
+#activite_vieuxport, #activite_calanques, #activite_fort, #activite_frioul, #activite_dame, #activite_longchamp
+{
+    height: 100px;
+    background-size: 100%;
+    background-position: 40% 50% ;
+    border-radius: 15px 15px 0px 0px;
+    background-repeat: no-repeat;
+}
+
+
+.bouton_recherche
+{
+    display: none;
+}
+
+.bouton_recherche_loupe
+{
+    display: inline-block;
+}
+
+.hebergement_img 
+{ 
+    background: no-repeat;
+    align-items: center;
+    border-radius: 15px 15px 0px 0px;  
+}
+
+.hebergement 
+{
+    
+}
+
+.bouton
+{
+    width: 50%;
+}
+
+article
+{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    grid-column: 1;
+    grid-template-columns: 1fr;
+}
+
+aside
+{
+    width: 100%;
+}
+
+.activite_tableau
+{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#filtre
+{
+    flex-direction: column;
+}
+
+.bouton
+{
+    display: flex;
+    margin: 10px;
+    width: 90%;
+}
+
+
+
+    footer
+    {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+/*----------------RESPONSIVE tablette ----------------------*/
+
+@media all and (min-width: 640px) and (max-width: 1300px)
+{
+        #bloc_page
+        {
+            width: auto;
+        }
+    
+        h2
+        {
+            text-align:center;
+        }
+    
+    section
+    {
+        display:flex;
+        flex-direction: column;
+    }
+
+    #activite_marseille
+    {
+        margin:auto;
+        flex-direction: column;
+        width: 50%;
+        
+    }
+    
+    .grande_section, .petite_section
+    {
+        width: auto;
+    }
+    
+    #activite_calanques, #activite_vieuxport, #activite_frioul, #activite_dame, #activite_longchamp, #activite_fort
+    {
+        border-radius: 15px 15px 0px 0px;
+        background-repeat: no-repeat;
+       
+        
+    }
+
+    #hotel_soleil, #hotel_coeur, #hotel_bleu
+    {
+        background-size: 300px;
+        background-repeat: no-repeat;  
+    }
+    
+    .bouton_recherche
+    {
+        display: none;
+    }
+    
+    .bouton_recherche_loupe
+    {
+        display: inline-block;
+    }
+    
+    .hebergement_img 
+    { 
+        background: no-repeat;
+        align-items: center;
+        border-radius: 15px 15px 0px 0px; 
+    }
+ 
+    .bouton_plus
+    {
+        width: 50%;
+    }
+ 
+    .hebergement
+    {
+        
+    
+    }
+    
+    article
+    {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        background-color: white;
+    }
+    
+    aside
+    {
+        width: 100%;
+    }
+    
+    .activite_tableau
+    {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #filtre
+    {
+        flex-direction: column;
+    }
+    
+    .bouton
+    {
+        display: flex;
+        margin: 10px;
+        width: 70%;
+    }
+    
+    .bouton a:hover
+    {
+        background-color: white;
+        padding: 0px 0px 0px 0px;
+    }
+    .grande_section, .petite_section
+    {
+        
+       height: 200px;
+        width: 100%;
+    }
+
+    #activite_vieuxport, #activite_calanques, #activite_fort, #activite_frioul, #activite_dame, #activite_longchamp
+    {
+        height: 150px;
+        background-size: 80%;
+        background-position: 40% 50% ;
+        
+    }
+
+    #activite_vieuxport
+{
+    width:200%;
+    
+    background-image: url('images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+    background-position: 60%,60%;
+    border-radius: 15px 15px 0px 0px;
+
+}
+    
+
+  
+        footer
+        {
+            flex-direction: column;
+            height: auto;
+        }
+}
