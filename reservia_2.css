@@ -334,7 +334,7 @@ article, aside
 #bloc_page
 {
     font-family: 'Raleway-VariableFont_wght';
-    width: 1300px;
+    width: 100%;
     margin: auto;
 }
 
