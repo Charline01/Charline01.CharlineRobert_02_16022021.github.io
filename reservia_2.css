@@ -1,14 +1,14 @@
 @font-face
 {
 	font-family: 'Raleway-VariableFont_wght';
-	src: local('police/Raleway-VariableFont_wght.ttf') format('truetype');
+	src: url('police/Raleway-VariableFont_wght.ttf') format('truetype');
     font-style: normal;
 }
 
 @font-face
 {
 	font-family: 'Raleway-ExtraBold';
-	src: local('police/Raleway-Extrabold.ttf') format('truetype');
+	src: url('police/Raleway-Extrabold.ttf') format('truetype');
     
 }
 
@@ -109,10 +109,6 @@ article
     text-decoration: none;
 }
 
-aside
-{
-    height: 824px; 
-}
 
 #titre_pop
  {
