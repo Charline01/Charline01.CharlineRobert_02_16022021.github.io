@@ -9,7 +9,7 @@
 {
 	font-family: 'Raleway-ExtraBold';
 	src: url('police/Raleway-Extrabold.ttf');
-    font-weight: bold;
+    
 }
 
 :root
@@ -662,6 +662,10 @@ section
     grid-column: 2 / 2;
 }
 
+#activite_marseille
+{
+    padding: 0px;
+}
 
 #nav_hebergement, #nav_activite
 {
@@ -763,7 +767,7 @@ aside
 
 /*----------------RESPONSIVE tablette ----------------------*/
 
-@media all and (min-width: 640px) and (max-width: 1300px)
+@media all and (min-width: 640px) and (max-width: 1000px)
 {
         #bloc_page
         {
