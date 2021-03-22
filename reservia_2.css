@@ -8,7 +8,7 @@
 @font-face
 {
 	font-family: 'Raleway-ExtraBold';
-	src: url('police/Raleway-Extrabold.ttf') format('truetype');
+	src: url('police/Raleway-ExtraBold.ttf') format('truetype');
     
 }
 
@@ -334,7 +334,7 @@ article, aside
 #bloc_page
 {
     font-family: 'Raleway-VariableFont_wght';
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
