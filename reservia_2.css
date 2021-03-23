@@ -56,8 +56,9 @@ article
     grid-column: 1/4;
     padding: 10px;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 20px;
+    grid-gap: 50px;
     grid-row: 1;
+    padding: 50px;
 }
 
 #hebergement 
@@ -133,7 +134,8 @@ article
     margin: 0px 15px 50px 10px;
     background-color: white;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 4px 4px 4px #b1b1b163;  
+    box-shadow: 4px 4px 4px #b1b1b163; 
+    margin : 50px;
 }
 
 .pop_description
@@ -201,11 +203,6 @@ article
     padding-left: 10px;
 }
 
-#activite_marseille
-{
-    width: auto;
-    padding-left: 20px;
-}
 
 .activite_tableau
 {
@@ -253,27 +250,31 @@ article
     
 }
 
+h4{
+    margin: 20px 0px 10px 0px;
+
+}
 
 .grande_section
 {
     box-shadow: 4px 4px 4px #b1b1b163;  
 	border-radius: 15px;
-    width: auto;
-    height: 400px;      
+    width: 250px;
+    height: 350px;  
 }
 
 .petite_section
 {
     box-shadow: 4px 4px 4px #b1b1b163;  
 	border-radius: 15px;
-    width: auto;
-    height: 170px;      
+    width: 250px;
+    height: 130px;      
 }
 
 #activite_calanques
 {
     height: 300px;
-    background-size: 800px;
+    background-size: 600px;
     background-position: 60%,60%;
     border-radius: 15px 15px 0px 0px;
     background-image: url('images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
@@ -289,8 +290,8 @@ article
 
 #activite_frioul
 {
-    height: 100px;
-    background-size: 800px;
+    height: 90px;
+    background-size: 300px;
     background-position: 60% 40% ;
     border-radius: 15px 15px 0px 0px;
     background-image: url('images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
@@ -298,17 +299,17 @@ article
 
 #activite_dame
 {
-    height: 100px;
-    background-size: 500px;
-    background-position: 50% 10% ;
+    height: 80px;
+    background-size: 300px;
+    background-position: 50% 20% ;
     border-radius: 15px 15px 0px 0px;
     background-image: url('images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg');
 }
 
 #activite_longchamp
 {
-    height: 100px;
-    background-size: 500px;
+    height: 80px;
+    background-size: 400px;
     background-position: 60% 50% ;
     border-radius: 15px 15px 0px 0px;
     background-image: url('images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
@@ -316,8 +317,8 @@ article
 
 #activite_fort
 {
-    height: 100px;
-    background-size: 500px;
+    height: 90px;
+    background-size: 300px;
     background-position: 60% 50% ;
     border-radius: 15px 15px 0px 0px;
     background-image: url('images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
@@ -333,7 +334,7 @@ article, aside
 #bloc_page
 {
     font-family: 'Raleway-VariableFont_wght';
-    width: 90%;
+    width: 100%;
 }
 
 .bouton
@@ -498,7 +499,7 @@ section
 {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
-    gap: 30px;
+    gap: 50px;
 }
 
 
@@ -571,7 +572,6 @@ footer
 	width: auto;
     margin-top: 40px;
     padding-top: 50px;
-    padding-left: 5%;
     background-color: var(--gris);
     font-family: 'Raleway-VariableFont_wght';
     font-size: 16px;
@@ -763,131 +763,134 @@ aside
 
 @media all and (min-width: 640px) and (max-width: 1024px)
 {
-        
-    
-        h2
-        {
-            text-align:center;
-        }
-
-        
-    
-    section
+     
+    h2
     {
-        display:flex;
-        flex-direction: column;
-        
+        text-align:center;
     }
 
-    #activite_marseille
+    #nav_hebergement
     {
-        margin:auto;
-        flex-direction: column;
-        width: 50%;
-        
+        grid-column: 5;
     }
     
-    .grande_section, .petite_section
+    #nav_activite
     {
+        grid-column: 7;
+    } 
+
+section
+{
+    display:flex;
+    flex-direction: column;
+    
+}
+
+#activite_marseille
+{
+    margin:auto;
+    flex-direction: column;
+    width: 50%;
+    
+}
+
+.grande_section, .petite_section
+{
+    width: auto;
+}
+
+#activite_calanques, #activite_vieuxport, #activite_frioul, #activite_dame, #activite_longchamp, #activite_fort
+{
+    border-radius: 15px 15px 0px 0px;
+    background-repeat: no-repeat;
+    height: 150px;
+   
+    
+}
+
+#hotel_soleil, #hotel_coeur, #hotel_bleu
+{
+    background-size: 300px;
+    background-repeat: no-repeat;  
+}
+
+.bouton_recherche
+{
+    display: none;
+}
+
+.bouton_recherche_loupe
+{
+    display: inline-block;
+}
+
+.hebergement_img 
+{ 
+    background: no-repeat;
+    align-items: center;
+    border-radius: 15px 15px 0px 0px; 
+}
+
+.bouton_plus
+{
+    width: 50%;
+}
+
+
+article
+{
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    grid-column: 2;
+}
+
+aside
+{
+    width: 100%;
+}
+
+.activite_tableau
+{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#filtre
+{
+    flex-direction: column;
+}
+
+.bouton
+{
+    display: flex;
+    margin: 10px;
+    width: 70%;
+}
+
+.bouton a:hover
+{
+    
+    padding: 0px 0px 0px 0px;
+}
+.grande_section, .petite_section
+{
+    
+   height: 200px;
+    width: 100%;
+}
+
+
+
+    footer
+    {
+        flex-direction: column;
+        height: auto;
         width: auto;
-    }
-    
-    #activite_calanques, #activite_vieuxport, #activite_frioul, #activite_dame, #activite_longchamp, #activite_fort
-    {
-        border-radius: 15px 15px 0px 0px;
-        background-repeat: no-repeat;
-       
-        
-    }
-
-    #hotel_soleil, #hotel_coeur, #hotel_bleu
-    {
-        background-size: 300px;
-        background-repeat: no-repeat;  
-    }
-    
-    .bouton_recherche
-    {
-        display: none;
-    }
-    
-    .bouton_recherche_loupe
-    {
-        display: inline-block;
-    }
-    
-    .hebergement_img 
-    { 
-        background: no-repeat;
-        align-items: center;
-        border-radius: 15px 15px 0px 0px; 
-    }
- 
-    .bouton_plus
-    {
-        width: 50%;
-    }
- 
-    
-    article
-    {
-        width: 100%;
-        background-color: white;
-        flex-direction: column;
-        grid-column: 2;
-    }
-    
-    aside
-    {
-        width: 100%;
-    }
-    
-    .activite_tableau
-    {
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    #filtre
-    {
-        flex-direction: column;
-    }
-    
-    .bouton
-    {
-        display: flex;
-        margin: 10px;
-        width: 70%;
-    }
-    
-    .bouton a:hover
-    {
-        
-        padding: 0px 0px 0px 0px;
-    }
-    .grande_section, .petite_section
-    {
-        
-       height: 200px;
-        width: 100%;
-    }
-
-    #activite_vieuxport, #activite_calanques, #activite_fort, #activite_frioul, #activite_dame, #activite_longchamp
-    {
-        height: 150px;
-        background-size: 80%;
-        background-position: 40% 50% ;
-        
-    }
-
-        footer
-        {
-            flex-direction: column;
-            height: auto;
-            width: auto;
-        }
+    }  
+}   
 
 /*----------------RESPONSIVE DESKTOP ----------------------*/
         @media all and (min-width: 1024px) and (max-width: 2000px)
@@ -898,7 +901,7 @@ aside
     {
         width: auto;
         margin: 0px;
-        align-items: center;
+       
     }
    
 
