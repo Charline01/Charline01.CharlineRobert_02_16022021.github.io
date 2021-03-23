@@ -334,18 +334,17 @@ article, aside
 {
     font-family: 'Raleway-VariableFont_wght';
     width: 90%;
-    margin: auto;
 }
 
 .bouton
 {
+    width: auto;
     height: 25px;
     bottom: 5px;
     border: 3px solid var(--gris);
     color: black;
     border-radius: 60px 50px 50px 60px;
     padding: 10px 10px 10px 0px;
-    font-size: 12px bold;
     text-decoration: none;
     margin-left: 20px;
     
@@ -383,7 +382,6 @@ article, aside
     color: white;
     text-align: center;
     padding: 10px 20px 10px;
-    font-size: 20px bold;
     text-decoration: none;
     margin-left: -5px;
 }
@@ -403,7 +401,6 @@ article, aside
    color: white;
    text-align: center;
    padding: 10px 10px 10px;
-   font-size: 20px bold;
    text-decoration: none;
    margin-left: -5px;
 }
@@ -574,7 +571,7 @@ footer
 	width: auto;
     margin-top: 40px;
     padding-top: 50px;
-    padding-left: 15%;
+    padding-left: 5%;
     background-color: var(--gris);
     font-family: 'Raleway-VariableFont_wght';
     font-size: 16px;
@@ -719,7 +716,7 @@ section
 
 .bouton
 {
-    width: 50%;
+    width: auto;
 }
 
 article
@@ -764,22 +761,22 @@ aside
 
 /*----------------RESPONSIVE tablette ----------------------*/
 
-@media all and (min-width: 640px) and (max-width: 1000px)
+@media all and (min-width: 640px) and (max-width: 1024px)
 {
-        #bloc_page
-        {
-            width: auto;
-        }
+        
     
         h2
         {
             text-align:center;
         }
+
+        
     
     section
     {
         display:flex;
         flex-direction: column;
+        
     }
 
     #activite_marseille
@@ -889,5 +886,20 @@ aside
         {
             flex-direction: column;
             height: auto;
+            width: auto;
         }
+
+/*----------------RESPONSIVE DESKTOP ----------------------*/
+        @media all and (min-width: 1024px) and (max-width: 2000px)
+{
+    #bloc_page
+   
+    body
+    {
+        width: auto;
+        margin: 0px;
+        align-items: center;
+    }
+   
+
 }
