@@ -274,7 +274,7 @@ h4{
 #activite_calanques
 {
     height: 300px;
-    background-size: 600px;
+    background-size: 800px;
     background-position: 60%,60%;
     border-radius: 15px 15px 0px 0px;
     background-image: url('images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
@@ -804,7 +804,16 @@ section
     border-radius: 15px 15px 0px 0px;
     background-repeat: no-repeat;
     height: 150px;
-   
+}
+
+#activite_fort, #activite_frioul, #activite_dame, #activite_longchamp
+{
+    
+    background-size: 550px;
+    
+    background-position: 60%,60%;
+    
+    
     
 }
 
