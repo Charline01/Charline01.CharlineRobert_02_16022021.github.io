@@ -58,7 +58,7 @@ article
     grid-template-columns: repeat(3,1fr);
     grid-gap: 50px;
     grid-row: 1;
-    padding: 50px;
+    padding: 0px 50px 50px 50px;
 }
 
 #hebergement 
@@ -97,6 +97,10 @@ article
 
 /*----------------POPULAIRE----------------------*/
 
+.titre_pop h2
+{
+    margin: 0px 0px 50px 0px;
+}
 
 
 .populaire a:hover
@@ -242,13 +246,6 @@ article
       grid-column: 4;
       grid-row: 3;
   }
-
-
-.fort
-{
-    height: 170px;
-    
-}
 
 h4{
     margin: 20px 0px 10px 0px;
@@ -615,6 +612,10 @@ footer
         width: auto;
     }
 
+    .populaire
+    {
+        margin: 10px;
+    }
         
     h2
     {
@@ -670,15 +671,12 @@ section
     margin-right: -10px;
 }
 
-
 #nav_hebergement:hover, #nav_activite:hover, #nav_hebergement a:hover, #nav_activite a:hover
 {
     color: var(--bleu);
     border-top: none;
     border-bottom: 5px solid #0065FC;
     padding-bottom: 20px;
-    
-  
 }
 
 .grande_section, .petite_section
@@ -763,7 +761,12 @@ aside
 
 @media all and (min-width: 640px) and (max-width: 1024px)
 {
-     
+    
+    .populaire
+    {
+        margin: 0px;
+    }
+
     h2
     {
         text-align:center;
@@ -848,6 +851,7 @@ section
 
 article
 {
+    padding: 0;
     width: 100%;
     background-color: white;
     flex-direction: column;
@@ -911,6 +915,11 @@ aside
         width: auto;
         margin: 0px;
        
+    }
+
+    .populaire
+    {
+        margin: 10px;
     }
    
 
