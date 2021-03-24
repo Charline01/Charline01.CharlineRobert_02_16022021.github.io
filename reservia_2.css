@@ -248,7 +248,8 @@ article
   }
 
 h4{
-    margin: 20px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    margin: 0px;
 
 }
 
@@ -256,16 +257,12 @@ h4{
 {
     box-shadow: 4px 4px 4px #b1b1b163;  
 	border-radius: 15px;
-    width: 250px;
-    height: 350px;  
 }
 
 .petite_section
 {
     box-shadow: 4px 4px 4px #b1b1b163;  
-	border-radius: 15px;
-    width: 250px;
-    height: 130px;      
+	border-radius: 15px;      
 }
 
 #activite_calanques
