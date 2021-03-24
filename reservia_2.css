@@ -24,19 +24,18 @@ nav
     display: flex;
 }
 
+
 /*----------------HEBERGEMENT----------------------*/
 
 h3, #filtre, #titre_pop, h4, h2, .bouton, .bouton_plus, .prix
 {
     font-family: 'Raleway-ExtraBold';
-    
 }
 
 .hebergement
 {
     background-color:white;
     box-shadow: 4px 4px 4px #b1b1b163;  
-    
 }
 
 .hebergement a:hover
@@ -54,11 +53,10 @@ article
 {
     display: grid;
     grid-column: 1/4;
-    padding: 10px;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 50px;
+    grid-gap: 40px;
     grid-row: 1;
-    padding: 0px 50px 50px 50px;
+    padding: 0px 40px 40px 40px;
 }
 
 #hebergement 
@@ -69,9 +67,8 @@ article
 .hebergement
 {
     height: 320px;
-    Border-radius: 20px;
+    border-radius: 20px;
 	padding: 10px 3px 3px 3px;
-    
 }
 
 
@@ -120,7 +117,6 @@ article
     padding-left: 20px;
     align-items: baseline;
     width: auto;
-    
  }
 
  #titre_pop span
@@ -131,7 +127,6 @@ article
 
 .populaire
 {
-    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 180px;
@@ -139,7 +134,7 @@ article
     background-color: white;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 4px 4px 4px #b1b1b163; 
-    margin : 50px;
+    margin : 5%;
 }
 
 .pop_description
@@ -196,8 +191,7 @@ article
 }
 
 .activite_tableau a:hover
-{
-    
+{ 
     color: var(--bleu);
     text-decoration: none;
 }
@@ -212,7 +206,7 @@ article
 {
     display: grid;
     grid-gap: 50px;
-    
+    grid-template-columns:repeat(4, 250px);
 }
 
   .port {
@@ -240,7 +234,6 @@ article
     grid-row: 2;
   }
   
-
   .longchamp
   {
       grid-column: 4;
@@ -250,7 +243,6 @@ article
 h4{
     padding: 10px 0px 10px 0px;
     margin: 0px;
-
 }
 
 .grande_section
@@ -328,7 +320,9 @@ article, aside
 #bloc_page
 {
     font-family: 'Raleway-VariableFont_wght';
-    width: 100%;
+    
+    width: 1300px;
+    margin: auto;
 }
 
 .bouton
@@ -342,7 +336,6 @@ article, aside
     padding: 10px 10px 10px 0px;
     text-decoration: none;
     margin-left: 20px;
-    
 }
 
 .bouton a
@@ -412,8 +405,7 @@ article, aside
  }
 
  .info
- { 
-    
+ {  
     border-radius: 50px 50px 50px 50px;
     border: 3px solid var(--gris);
     padding: 10px 20px 10px 20px;
@@ -423,7 +415,6 @@ article, aside
 
  #groupe_info
  {
-   
     display: inline-flex;
     align-items: baseline;
  } 
@@ -434,10 +425,7 @@ article, aside
      border-radius: 50px 50px 50px 50px;
      padding: 15px 15px 15px 15px;
      margin-right: 10px;
-    
  }
-
- 
 
 fieldset
 {
@@ -496,22 +484,18 @@ section
     gap: 50px;
 }
 
-
-
 #conteneur_logo
 {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(10px, auto);
-   
 }
 
 #titre_principal
 {
     grid-column: 1;
 }
-
 
 #nav_hebergement
 {
@@ -557,9 +541,6 @@ section
     text-align: center;
 }
 
-
-
-
 /*----------------FOOTER----------------------*/
 footer
 {
@@ -571,6 +552,7 @@ footer
     font-size: 16px;
     display: flex;
     height: 200px;
+    padding-left: 25%;
 }
 
 #liste_apropos ul, #nos_hebergements ul, #assistance ul
@@ -585,7 +567,6 @@ footer
 {
    color:black;
     text-decoration: none;
-
 }
 
 #liste_apropos li, #nos_hebergements li, #assistance li
@@ -611,7 +592,7 @@ footer
 
     .populaire
     {
-        margin: 10px;
+        margin: 5%;
     }
         
     h2
@@ -758,11 +739,18 @@ aside
 
 @media all and (min-width: 640px) and (max-width: 1024px)
 {
-    
+
+    #bloc_page
+    {
+        width: auto;
+        margin: auto;
+    }
+
     .populaire
     {
-        margin: 0px;
+        margin: 5%;
     }
+     
 
     h2
     {
@@ -783,7 +771,6 @@ section
 {
     display:flex;
     flex-direction: column;
-    
 }
 
 #activite_marseille
@@ -791,7 +778,6 @@ section
     margin:auto;
     flex-direction: column;
     width: 50%;
-    
 }
 
 .grande_section, .petite_section
@@ -808,13 +794,8 @@ section
 
 #activite_fort, #activite_frioul, #activite_dame, #activite_longchamp
 {
-    
     background-size: 550px;
-    
     background-position: 60%,60%;
-    
-    
-    
 }
 
 #hotel_soleil, #hotel_coeur, #hotel_bleu
@@ -885,14 +866,13 @@ aside
     
     padding: 0px 0px 0px 0px;
 }
+
 .grande_section, .petite_section
 {
     
    height: 200px;
     width: 100%;
 }
-
-
 
     footer
     {
@@ -902,22 +882,3 @@ aside
     }  
 }   
 
-/*----------------RESPONSIVE DESKTOP ----------------------*/
-        @media all and (min-width: 1024px) and (max-width: 2000px)
-{
-    #bloc_page
-   
-    body
-    {
-        width: auto;
-        margin: 0px;
-       
-    }
-
-    .populaire
-    {
-        margin: 10px;
-    }
-   
-
-}
