@@ -745,6 +745,14 @@ aside
 @media all and (min-width: 640px) and (max-width: 1024px)
 {
 
+    .activite_tableau
+    {
+       margin: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
     #bloc_page
     {
       width: 100%;  
@@ -781,7 +789,6 @@ section
 {
     margin:auto;
     flex-direction: column;
-    width: 50%;
 }
 
 .grande_section, .petite_section
@@ -846,14 +853,7 @@ aside
     width: 100%;
 }
 
-.activite_tableau
-{
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 0;
-}
+
 
 #filtre
 {
