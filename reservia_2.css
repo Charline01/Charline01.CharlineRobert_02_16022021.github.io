@@ -208,6 +208,7 @@ article
     grid-gap: 50px;
     grid-template-columns : repeat(4, 1fr);
     margin-left: 15%;
+    width: 60%;
 }
 
   .port {
@@ -322,7 +323,6 @@ article, aside
 {
     font-family: 'Raleway-VariableFont_wght';
     margin: auto;
-    width: 80%;
     
 }
 
@@ -592,7 +592,7 @@ footer div {
 {
     #bloc_page
     {
-        width: auto;
+        width: 100%;
     }
 
     .populaire
@@ -716,9 +716,9 @@ aside
 
 .activite_tableau
 {
-    
     display: flex;
     flex-direction: column;
+    margin:0;
 }
 
 #filtre
@@ -747,8 +747,7 @@ aside
 
     #bloc_page
     {
-        width: auto;
-        margin: auto;
+      width: 100%;  
     }
 
     .populaire
@@ -839,6 +838,7 @@ article
     background-color: white;
     flex-direction: column;
     grid-column: 2;
+    grid-gap: 20px;
 }
 
 aside
@@ -852,7 +852,7 @@ aside
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-left: -15%;
+    margin: 0;
 }
 
 #filtre
