@@ -322,7 +322,7 @@ article, aside
 {
     font-family: 'Raleway-VariableFont_wght';
     margin: auto;
-    width: 85%;
+    width: 80%;
     
 }
 
@@ -799,7 +799,7 @@ section
 
 #activite_fort, #activite_frioul, #activite_dame, #activite_longchamp
 {
-    background-size: 550px;
+    background-size: 600px;
     background-position: 60%,60%;
 }
 
