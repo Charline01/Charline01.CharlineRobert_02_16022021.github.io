@@ -320,8 +320,6 @@ article, aside
 #bloc_page
 {
     font-family: 'Raleway-VariableFont_wght';
-    
-    width: 1300px;
     margin: auto;
 }
 
@@ -560,7 +558,7 @@ footer
     text-decoration: none;
     padding-left : 2px;
     list-style-type: none;
-    margin-right: 200px;
+    
 }
 
 #liste_apropos a, #nos_hebergements a, #assistance a
