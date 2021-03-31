@@ -27,6 +27,15 @@ nav
 
 /*----------------HEBERGEMENT----------------------*/
 
+#titre_activite{
+    padding-left: 50px;
+    
+}
+#activite_marseille{
+    margin: auto;
+}
+
+
 h3, #filtre, #titre_pop, h4, h2, .bouton, .bouton_plus, .prix
 {
     font-family: 'Raleway-ExtraBold';
@@ -213,8 +222,9 @@ article
     display: grid;
     grid-gap: 50px;
     grid-template-columns : repeat(4, 1fr);
-    margin-left: 25%;
-    width: 60%;
+    width: 70%;
+    margin: auto;
+    
 }
 
   .port {
@@ -648,6 +658,7 @@ section
 #activite_marseille
 {
     padding: 0px;
+
 }
 
 #nav_hebergement, #nav_activite
@@ -724,7 +735,7 @@ aside
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 100%;
+    width: 90%;
 }
 
 #filtre
@@ -762,7 +773,7 @@ aside
 
     #bloc_page
     {
-      width: 80%;  
+      width: auto;  
     }
 
     .populaire
