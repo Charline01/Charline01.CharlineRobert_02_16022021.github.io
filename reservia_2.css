@@ -108,6 +108,12 @@ article
     margin: 0px 0px 50px 0px;
 }
 
+#section_populaire, fieldset{
+    width: 95%;
+    margin: auto;
+}
+
+
 
 .populaire a:hover
 {
@@ -126,6 +132,7 @@ article
     padding-left: 20px;
     align-items: baseline;
     width: auto;
+    margin-bottom: 60px;
  }
 
  #titre_pop span
@@ -139,11 +146,11 @@ article
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 180px;
-    margin: 0px 15px 50px 10px;
+    margin: 0px 40px 40px 40px;
     background-color: white;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 4px 4px 4px #b1b1b163; 
-    margin : 5%;
+    
 }
 
 .pop_description
@@ -220,11 +227,15 @@ article
 .activite_tableau
 {
     display: grid;
-    grid-gap: 50px;
+    grid-gap: 40px;
     grid-template-columns : repeat(4, 1fr);
-    width: 70%;
+    width: 95%;
     margin: auto;
     
+}
+
+.activite_tableau p{
+    margin-top: 0;
 }
 
   .port {
@@ -272,13 +283,22 @@ h4{
 .petite_section
 {
     box-shadow: 4px 4px 4px #b1b1b163;  
-	border-radius: 15px;      
+	border-radius: 15px; 
+    background-repeat: no-repeat;   
 }
+
+.activite_enfant{
+    display: flex;
+    flex-direction: column;
+    gap:7vh;
+}
+
 
 #activite_calanques
 {
-    height: 300px;
-    background-size: 800px;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: 60%,60%;
     border-radius: 15px 15px 0px 0px;
     background-image: url('images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
@@ -286,16 +306,20 @@ h4{
 
 #activite_vieuxport
 {
-    height: 300px;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url('images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
     background-position: 60%,60%;
     border-radius: 15px 15px 0px 0px;
+
 }
 
 #activite_frioul
 {
-    height: 90px;
-    background-size: 300px;
+    height: 19vh;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: 60% 40% ;
     border-radius: 15px 15px 0px 0px;
     background-image: url('images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
@@ -303,8 +327,9 @@ h4{
 
 #activite_dame
 {
-    height: 80px;
-    background-size: 300px;
+    height: 27vh;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: 50% 20% ;
     border-radius: 15px 15px 0px 0px;
     background-image: url('images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg');
@@ -312,8 +337,9 @@ h4{
 
 #activite_longchamp
 {
-    height: 80px;
-    background-size: 400px;
+    height: 27vh;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: 60% 50% ;
     border-radius: 15px 15px 0px 0px;
     background-image: url('images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
@@ -321,8 +347,9 @@ h4{
 
 #activite_fort
 {
-    height: 90px;
-    background-size: 300px;
+    height: 35vh;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: 60% 50% ;
     border-radius: 15px 15px 0px 0px;
     background-image: url('images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
@@ -338,6 +365,8 @@ article, aside
 #bloc_page
 {
     font-family: 'Raleway-VariableFont_wght';
+   
+    margin: auto;
     
 }
 
@@ -496,7 +525,7 @@ form
 section
 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: 1fr 1fr 1fr 1.5fr; 
     gap: 50px;
 }
 
@@ -735,7 +764,7 @@ aside
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 90%;
+    width: 95%;
 }
 
 #filtre
@@ -773,12 +802,12 @@ aside
 
     #bloc_page
     {
-      width: auto;  
+      width: 100%;  
     }
 
     .populaire
     {
-        margin: 5%;
+        margin: 40px;
     }
      
 
