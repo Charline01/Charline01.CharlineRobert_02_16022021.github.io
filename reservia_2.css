@@ -852,8 +852,8 @@ section
 
 #activite_fort, #activite_frioul, #activite_dame, #activite_longchamp
 {
-    background-size: 800px;
     background-position: 60%,60%;
+    background-size: cover;
 }
 
 #hotel_soleil, #hotel_coeur, #hotel_bleu
